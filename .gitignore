@@ -1,0 +1,15 @@
+\JDRApplication\bin\*
+\JDRApplication\obj\*
+\JDRApplication.core\bin\*
+\JDRApplication.core\obj\*
+\JDRApplication.data\bin\*
+\JDRApplication.data\obj\*
+JDRApplication/bin/
+
+JDRApplication/obj/
+
+JDRApplication.core/obj/
+
+JDRApplication.data/obj/
+
+JDRApplication/Resources/Resource.designer.cs

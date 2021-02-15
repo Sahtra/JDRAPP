@@ -14,7 +14,7 @@ using MvvmCross.Platforms.Android.Views;
 
 namespace JDRApplication.Views
 {
-    [Activity(Label = "MainMenuView", MainLauncher = true)]
+    [Activity(Label = "MainMenuView")]
     public class MainMenuView : BaseView<MainMenuViewModel>
     {
         protected  override int LayoutResource => Resource.Layout.MainMenuView;
