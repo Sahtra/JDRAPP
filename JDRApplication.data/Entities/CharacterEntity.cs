@@ -15,6 +15,8 @@ namespace JDRApplication.data.Entities
         public int ID { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
+        public int Pv { get; set; }
+        public int Mana { get; set; }
         public string Race { get; set; }
         public string Extraction { get; set; }
         public int Physique { get; set; }
