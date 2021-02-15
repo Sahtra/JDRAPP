@@ -116,6 +116,9 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs">
+      <Version>7.1.0.475</Version>
+    </PackageReference>
     <PackageReference Include="MvvmCross">
       <Version>6.4.2</Version>
     </PackageReference>
@@ -134,6 +137,10 @@
     <ProjectReference Include="..\JDRApplication.core\JDRApplication.core.csproj">
       <Project>{bd2c9442-a2c6-442c-a993-2b3f4baae75c}</Project>
       <Name>JDRApplication.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JDRApplication.data\JDRApplication.data.csproj">
+      <Project>{5B8D3314-47FF-4C80-9494-49D04D36F647}</Project>
+      <Name>JDRApplication.data</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

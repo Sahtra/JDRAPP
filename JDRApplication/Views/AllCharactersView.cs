@@ -8,8 +8,10 @@ using Android.Content;
 using Android.Content.Res;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using JDRApplication.Adapter;
 using JDRApplication.core.viewmodels;
 
 namespace JDRApplication.Views
@@ -22,12 +24,14 @@ namespace JDRApplication.Views
 
         protected override void OnCreate(Bundle bundle)
         {
-            ListView lv = FindViewById<ListView>(Resource.Id.MyListView);
-            characteradapter
-
-
-
+            
             base.OnCreate(bundle);
+            RecyclerView rcv = FindViewById<RecyclerView>(Resource.Id.MyListView);
+            rcv.SetLayoutManager(new LinearLayoutManager(this));
+            CharacterAdapter myAdapter = new CharacterAdapter(ViewModel.myCharacters);
+            rcv.SetAdapter(myAdapter);
+
+
         }
     }
 }

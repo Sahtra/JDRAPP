@@ -21,8 +21,13 @@ namespace JDRApplication.core.viewmodels
 
         private async Task GoToAllTask()
         {
-          
-            await navigationService.Navigate<AllCharactersViewModel>();
+
+            using (Acr.UserDialogs.UserDialogs.Instance.Loading("Loading"))
+            {
+                await Task.Run(async () => { await navigationService.Navigate<AllCharactersViewModel>(); });
+            }
+             
+            
             await navigationService.Close(this);
         }
         private async Task GoToGeneratorTask()

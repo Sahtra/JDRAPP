@@ -66,10 +66,28 @@
         android:text="Extraction"
         android:layout_marginTop="5dp" />
     <TextView
-        android:id="@+id/TvLabelDescription"
+        android:id="@+id/TvLabelType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/TvLabelExtraction"
+        app:layout_constraintStart_toStartOf="@id/TvLabelExtraction"
+        android:text="Type"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/TvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toBottomOf="@id/TvLabelExtraction"
+        app:layout_constraintStart_toEndOf="@id/TvLabelType"
+        android:text="Type"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:id="@+id/TvLabelDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TvLabelType"
         app:layout_constraintStart_toStartOf="@id/TvLabelRace"
         android:text="Description"
         android:layout_marginTop="5dp"
@@ -85,7 +103,7 @@
         android:layout_marginTop="5dp"
         />
 
-    <view
+    <View
         android:id="@+id/SeparatorTop"
         app:layout_constraintTop_toBottomOf="@id/TvDescription"
         android:layout_marginTop="5dp"
@@ -115,7 +133,7 @@
         app:layout_constraintTop_toBottomOf="@id/IconPhysique"
         app:layout_constraintStart_toStartOf="@id/IconPhysique"
         app:layout_constraintEnd_toEndOf="@id/IconPhysique"/>
-    <view
+    <View
         android:id="@+id/SeparatorPhysique"
         app:layout_constraintStart_toEndOf="@id/IconPhysique"
         app:layout_constraintEnd_toStartOf="@id/IconMental"
@@ -146,7 +164,7 @@
         app:layout_constraintTop_toBottomOf="@id/IconMental"
         app:layout_constraintStart_toStartOf="@id/IconMental"
         app:layout_constraintEnd_toEndOf="@id/IconMental"/>
-    <view
+    <View
         android:id="@+id/SeparatorMental"
         app:layout_constraintStart_toEndOf="@id/IconMental"
         app:layout_constraintEnd_toStartOf="@id/IconSocial"
@@ -179,7 +197,7 @@
         app:layout_constraintEnd_toEndOf="@id/IconSocial"/>
 
 
-    <view
+    <View
         android:id="@+id/SeparatorBottom"
         android:layout_marginTop="5dp"
         app:layout_constraintTop_toBottomOf="@id/TextViewPhysique"
@@ -366,7 +384,7 @@
         app:layout_constraintStart_toStartOf="@id/IconAura"
         app:layout_constraintEnd_toEndOf="@id/IconAura"/>
 
-    <view
+    <View
         android:id="@+id/SeparatorBottomSecond"
         app:layout_constraintTop_toBottomOf="@id/TextViewStrength"
         android:layout_width="0dp"
@@ -420,7 +438,7 @@
         android:layout_marginRight="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <view
+    <View
         android:id="@+id/SeparatorLife"
         android:layout_width="0dp"
         android:layout_height="1dp"

@@ -18,7 +18,7 @@ namespace JDRApplication.Adapter
     {
         private List<CharacterEntity> data;
         public override int ItemCount => data == null ? 0 : data.Count;
-
+        private int res => Resource.Layout.item_character;
 
         public CharacterAdapter(List<CharacterEntity> data)
         {
@@ -27,7 +27,33 @@ namespace JDRApplication.Adapter
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
-            throw new NotImplementedException();
+            var myHolder = holder as CharacterViewHolder;
+
+            myHolder.TvLabelNom.Text = "Nom";
+            myHolder.TvNom.Text = data[position].Name;
+            myHolder.TvLabelRace.Text = "Race";
+            myHolder.TvLabelExtraction.Text = "Extraction";
+            myHolder.TvLabelDescription.Text = "Description";
+            myHolder.TvLabelType.Text = "Type";
+            myHolder.TvType.Text = data[position].Type;
+            myHolder.TvRace.Text = data[position].Race;
+            myHolder.TvExtraction.Text = data[position].Extraction;
+            myHolder.TvDescription.Text = data[position].Description;
+
+            myHolder.TvPhysique.Text = data[position].Physique.ToString();
+            myHolder.TvMental.Text = data[position].Mental.ToString();
+            myHolder.TvSocial.Text = data[position].Social.ToString();
+            myHolder.TvStrength.Text = data[position].Force.ToString();
+            myHolder.TvAgility.Text = data[position].Dexterite.ToString();
+            myHolder.TvKnowledge.Text = data[position].Savoir.ToString();
+            myHolder.TvInstinct.Text = data[position].Instinct.ToString();
+            myHolder.TvRelation.Text = data[position].Relations.ToString();
+            myHolder.TvAura.Text = data[position].Aura.ToString();
+
+            myHolder.TvLife.Text = data[position].Pv.ToString();
+            myHolder.TvMana.Text = data[position].Mana.ToString();
+
+
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
@@ -64,6 +90,8 @@ namespace JDRApplication.Adapter
         public TextView TvAura { get; set; }
         public TextView TvLife { get; set; }
         public TextView TvMana { get; set; }
+        public TextView TvLabelType { get; set; }
+        public TextView TvType { get; set; }
 
         public CharacterViewHolder(View ItemView) : base(ItemView)
         {
@@ -86,6 +114,8 @@ namespace JDRApplication.Adapter
             TvKnowledge = ItemView.FindViewById<TextView>(Resource.Id.TextViewKnowledge);
             TvLife = ItemView.FindViewById<TextView>(Resource.Id.TextViewHealth);
             TvMana = ItemView.FindViewById<TextView>(Resource.Id.TvMana);
+            TvLabelType = ItemView.FindViewById<TextView>(Resource.Id.TvLabelType);
+            TvType = ItemView.FindViewById<TextView>(Resource.Id.TvType);
         }
     }
 }

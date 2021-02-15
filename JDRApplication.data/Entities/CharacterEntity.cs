@@ -26,7 +26,7 @@ namespace JDRApplication.data.Entities
         public int Savoir { get; set; }
         public int Instinct { get; set; }
         public int Social { get; set; }
-        public int Relation { get; set; }
+        public int Relations { get; set; }
         public int Aura { get; set; }
         public string Description { get; set; }
     }
