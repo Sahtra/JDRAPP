@@ -6,3 +6,7 @@ JDRApplication/obj/
 JDRApplication.core/obj/
 
 JDRApplication.data/obj/
+
+JDRApplication.data/bin/
+
+JDRApplication.core/bin/

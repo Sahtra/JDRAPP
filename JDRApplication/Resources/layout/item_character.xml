@@ -18,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:text="Nom:"/>
+    
     <TextView
         android:id="@+id/TvLabelRace"
         android:layout_width="wrap_content"
@@ -36,9 +37,29 @@
         android:text="Extraction"
         android:layout_marginTop="5dp"
         android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/TvLabelDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TvLabelExtraction"
+        app:layout_constraintStart_toStartOf="@id/TvLabelRace"
+        android:text="Description"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/TvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TvLabelDescription"
+        app:layout_constraintStart_toStartOf="@id/TvLabelRace"
+        tools:text="Ceci est un text de description afin de vérifier l'intégriter du texte sur plusieurs lignes"
+        android:layout_marginTop="5dp"
+       />
+
     <view
         android:id="@+id/SeparatorTop"
-        app:layout_constraintTop_toBottomOf="@id/TvLabelExtraction"
+        app:layout_constraintTop_toBottomOf="@id/TvDescription"
         android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +131,7 @@
     <ImageView
         android:id="@+id/IconSocial"
         android:src="@drawable/ic_ico_talking"
-        android:scaleType="fitCenter"
+        android:scaleType="centerInside"
         app:layout_constraintTop_toTopOf="@id/SeparatorTop"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -140,11 +161,197 @@
         android:layout_width="0dp"
         android:layout_height="1dp"/>
 
+    <ImageView
+        android:id="@+id/IconStrength"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_ico_strength"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/SeparatorStrength"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/TextViewStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        tools:text="25"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/IconStrength"
+        app:layout_constraintStart_toStartOf="@id/IconStrength"
+        app:layout_constraintEnd_toEndOf="@id/IconStrength"/>
+    <View
+        android:id="@+id/SeparatorStrength"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@id/IconStrength"
+        app:layout_constraintEnd_toStartOf="@id/IconAgility"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintBottom_toBottomOf="@id/SeparatorBottomSecond"
+        />
+    <ImageView
+        android:id="@+id/IconAgility"
+        android:src="@drawable/ic_ico_agility"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintStart_toEndOf="@id/SeparatorStrength"
+        app:layout_constraintEnd_toStartOf="@id/SeparatorAgility"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/TextViewAgility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        tools:text="25"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/IconAgility"
+        app:layout_constraintStart_toStartOf="@id/IconAgility"
+        app:layout_constraintEnd_toEndOf="@id/IconAgility"/>
+    <View
+        android:id="@+id/SeparatorAgility"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@id/IconAgility"
+        app:layout_constraintEnd_toStartOf="@id/IconKnowledge"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintBottom_toBottomOf="@id/SeparatorBottomSecond"
+        />
+    <ImageView
+        android:id="@+id/IconKnowledge"
+        android:src="@drawable/ic_ico_knowledge"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintStart_toEndOf="@id/SeparatorAgility"
+        app:layout_constraintEnd_toStartOf="@id/SeparatorKnowledge"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/TextViewKnowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        tools:text="25"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/IconKnowledge"
+        app:layout_constraintStart_toStartOf="@id/IconKnowledge"
+        app:layout_constraintEnd_toEndOf="@id/IconKnowledge"/>
+    <View
+        android:id="@+id/SeparatorKnowledge"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@id/IconKnowledge"
+        app:layout_constraintEnd_toStartOf="@id/IconInstinct"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintBottom_toBottomOf="@id/SeparatorBottomSecond"
+        />
+    <ImageView
+        android:id="@+id/IconInstinct"
+        android:src="@drawable/ic_ico_instinct"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintStart_toEndOf="@id/SeparatorKnowledge"
+        app:layout_constraintEnd_toStartOf="@id/SeparatorInstinct"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/TextViewInstinct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        tools:text="25"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/IconInstinct"
+        app:layout_constraintStart_toStartOf="@id/IconInstinct"
+        app:layout_constraintEnd_toEndOf="@id/IconInstinct"/>
+    <View
+        android:id="@+id/SeparatorInstinct"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@id/IconInstinct"
+        app:layout_constraintEnd_toStartOf="@id/IconRelation"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintBottom_toBottomOf="@id/SeparatorBottomSecond"
+        />
+    <ImageView
+        android:id="@+id/IconRelation"
+        android:src="@drawable/ic_ico_relation"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintEnd_toEndOf="@id/SeparatorRelation"
+        app:layout_constraintStart_toEndOf="@id/SeparatorInstinct"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/TextViewRelation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        tools:text="25"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/IconRelation"
+        app:layout_constraintStart_toStartOf="@id/IconRelation"
+        app:layout_constraintEnd_toEndOf="@id/IconRelation"/>
+    <View
+        android:id="@+id/SeparatorRelation"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@id/IconRelation"
+        app:layout_constraintEnd_toStartOf="@id/IconAura"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintBottom_toBottomOf="@id/SeparatorBottomSecond"
+        />
+    <ImageView
+        android:id="@+id/IconAura"
+        android:src="@drawable/ic_ico_aura"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintStart_toEndOf="@id/SeparatorRelation"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/TextViewAura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        tools:text="25"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/IconAura"
+        app:layout_constraintStart_toStartOf="@id/IconAura"
+        app:layout_constraintEnd_toEndOf="@id/IconAura"/>
+
+    <view
+        android:id="@+id/SeparatorBottomSecond"
+        app:layout_constraintTop_toBottomOf="@id/TextViewStrength"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <ImageView
         android:id="@+id/IconHealth"
         android:scaleType="centerInside"
-        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottomSecond"
         android:src="@drawable/ic_ico_health"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="5dp"
@@ -166,7 +373,7 @@
 
     <ImageView
         android:id="@+id/IconMana"
-        app:layout_constraintTop_toBottomOf="@id/SeparatorBottom"
+        app:layout_constraintTop_toBottomOf="@id/SeparatorBottomSecond"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="5dp"
         android:scaleType="centerInside"
@@ -193,23 +400,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:background="#000000"/>
 
-    <TextView
-        android:id="@+id/TextViewDescription"
-        app:layout_constraintTop_toBottomOf="@id/SeparatorLife"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp"
-        tools:text="Ceci est un text de description afin de vérifier l'intégriter du texte sur plusieurs lignes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-    
-    <View
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        app:layout_constraintTop_toBottomOf="@id/TextViewDescription"
-        android:background="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+
+
 </android.support.constraint.ConstraintLayout>
