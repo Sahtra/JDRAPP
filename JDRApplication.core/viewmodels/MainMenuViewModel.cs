@@ -32,7 +32,7 @@ namespace JDRApplication.core.viewmodels
 
         public MainMenuViewModel(IMvxNavigationService navigation) : base(navigation)
         {
-
+            data.DataAccess.GetAll();
         }
 
 

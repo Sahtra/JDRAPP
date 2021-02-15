@@ -1,37 +1,27 @@
-﻿using System;
+﻿using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using MongoDB.Driver;
 
 namespace JDRApplication.data
 {
 
-  
+
 
     public class DataAccess
     {
-        private string connectionString = "mongodb+srv://Sahtra:Sland999@cluster0.hkjjw.mongodb.net/test";
-        private DataAccess Instance;
+        private static string connectionString = "https://jdrcharacters-f0a4.restdb.io/rest/characters";
+        private static string apiKey = "ba77b40bf106652ec24b73f0c92e4fbb9f66f";
 
-        public DataAccess GetInstance()
+
+        public static void GetAll()
         {
-            if (Instance == null)
-                return new DataAccess();
-            else
-                return Instance;
-        }
-
-        private DataAccess()
-        {
-            MongoClient dbClient = new MongoClient(connectionString);
-
-            var dbList = dbClient.ListDatabases().ToList();
-
-            Console.WriteLine("The list of databases on this server is: ");
-            foreach (var db in dbList)
-            {
-                Console.WriteLine(db);
-            }
+            RestClient client = new RestClient(connectionString);
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("cache-control", "no-cache");
+            request.AddHeader("x-apikey", "ba77b40bf106652ec24b73f0c92e4fbb9f66f");
+            request.AddHeader("content-type", "application/json");
+            IRestResponse response = client.Execute(request);
         }
 
     }
