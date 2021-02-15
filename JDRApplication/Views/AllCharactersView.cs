@@ -22,6 +22,11 @@ namespace JDRApplication.Views
 
         protected override void OnCreate(Bundle bundle)
         {
+            ListView lv = FindViewById<ListView>(Resource.Id.MyListView);
+            characteradapter
+
+
+
             base.OnCreate(bundle);
         }
     }
