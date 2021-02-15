@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JDRApplication.droid", "JDRApplication\JDRApplication.droid.csproj", "{C6B93068-FAB2-4179-8ABB-EEB0D2834880}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JDRApplication.core", "JDRApplication.core\JDRApplication.core.csproj", "{BD2C9442-A2C6-442C-A993-2B3F4BAAE75C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JDRApplication.data", "JDRApplication.data\JDRApplication.data.csproj", "{5B8D3314-47FF-4C80-9494-49D04D36F647}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6B93068-FAB2-4179-8ABB-EEB0D2834880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B93068-FAB2-4179-8ABB-EEB0D2834880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B93068-FAB2-4179-8ABB-EEB0D2834880}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C6B93068-FAB2-4179-8ABB-EEB0D2834880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B93068-FAB2-4179-8ABB-EEB0D2834880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B93068-FAB2-4179-8ABB-EEB0D2834880}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BD2C9442-A2C6-442C-A993-2B3F4BAAE75C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2C9442-A2C6-442C-A993-2B3F4BAAE75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2C9442-A2C6-442C-A993-2B3F4BAAE75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2C9442-A2C6-442C-A993-2B3F4BAAE75C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8D3314-47FF-4C80-9494-49D04D36F647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8D3314-47FF-4C80-9494-49D04D36F647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8D3314-47FF-4C80-9494-49D04D36F647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8D3314-47FF-4C80-9494-49D04D36F647}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84EAFBF3-8792-401D-BA46-44025C9D3F7A}
+	EndGlobalSection
+EndGlobal

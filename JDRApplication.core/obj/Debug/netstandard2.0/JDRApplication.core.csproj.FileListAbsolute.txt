@@ -1,0 +1,9 @@
+C:\Users\vgibault\source\repos\JDRApplication\JDRApplication.core\bin\Debug\netstandard2.0\JDRApplication.core.deps.json
+C:\Users\vgibault\source\repos\JDRApplication\JDRApplication.core\bin\Debug\netstandard2.0\JDRApplication.core.dll
+C:\Users\vgibault\source\repos\JDRApplication\JDRApplication.core\bin\Debug\netstandard2.0\JDRApplication.core.pdb
+C:\Users\vgibault\source\repos\JDRApplication\JDRApplication.core\obj\Debug\netstandard2.0\JDRApplication.core.csprojAssemblyReference.cache
+C:\Users\vgibault\source\repos\JDRApplication\JDRApplication.core\obj\Debug\netstandard2.0\JDRApplication.core.AssemblyInfoInputs.cache
+C:\Users\vgibault\source\repos\JDRApplication\JDRApplication.core\obj\Debug\netstandard2.0\JDRApplication.core.AssemblyInfo.cs
+C:\Users\vgibault\source\repos\JDRApplication\JDRApplication.core\obj\Debug\netstandard2.0\JDRApplication.core.csproj.CoreCompileInputs.cache
+C:\Users\vgibault\source\repos\JDRApplication\JDRApplication.core\obj\Debug\netstandard2.0\JDRApplication.core.dll
+C:\Users\vgibault\source\repos\JDRApplication\JDRApplication.core\obj\Debug\netstandard2.0\JDRApplication.core.pdb
