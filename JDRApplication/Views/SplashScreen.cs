@@ -27,7 +27,7 @@ namespace JDRApplication.Views
             base.OnCreate(bundle);
 
             var tb = FindViewById<TextView>(Resource.Id.Version);
-            tb.Text = ApplicationContext.PackageManager.GetPackageInfo(ApplicationContext.PackageName, 0).VersionName.ToString();
+             tb.Text = ApplicationContext.PackageManager.GetPackageInfo(ApplicationContext.PackageName, 0).VersionName.ToString();
 
         }
     }

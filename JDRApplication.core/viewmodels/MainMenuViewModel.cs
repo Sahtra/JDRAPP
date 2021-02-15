@@ -10,9 +10,9 @@ namespace JDRApplication.core.viewmodels
 {
     public class MainMenuViewModel : BaseViewModel
     {
-        public string LabelTitle;
-        public string LabelMenuAll;
-        public string LabelMenuGenerate;
+        public string LabelTitle => "PNJ Generator";
+        public string LabelMenuAll => "See all characters";
+        public string LabelMenuGenerate => "Go to generator";
 
 
         private MvxAsyncCommand goToAll, goToGenerator;

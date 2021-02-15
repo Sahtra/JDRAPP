@@ -14,6 +14,8 @@
         android:layout_height="wrap_content"
         tools:text="Titre"
         android:textColor="#000000"
+        app:MvxBind="Text LabelTitle"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="16dp"
@@ -25,18 +27,24 @@
     <Button
         android:id="@+id/BtnAll"
         tools:text="See All Characters"
+        app:MvxBind="Text LabelMenuAll; Click GoToAll"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="150dp"
+        android:padding="16dp"
+        android:background="@drawable/button_jdr"
         app:layout_constraintTop_toBottomOf="@id/LabelTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/BtnGenerate"
+        app:MvxBind="Text LabelMenuGenerate; Click GoToGenerator"
         tools:text="Generate a new character"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:padding="16dp"
+        android:background="@drawable/button_jdr"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/BtnAll"
