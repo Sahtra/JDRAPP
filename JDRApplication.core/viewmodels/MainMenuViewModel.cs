@@ -21,18 +21,19 @@ namespace JDRApplication.core.viewmodels
 
         private async Task GoToAllTask()
         {
-            await navigationService.Close(this);
+          
             await navigationService.Navigate<AllCharactersViewModel>();
+            await navigationService.Close(this);
         }
         private async Task GoToGeneratorTask()
         {
-            await navigationService.Close(this);
+           
             await navigationService.Navigate<GenerateViewModel>();
+            await navigationService.Close(this);
         }
 
         public MainMenuViewModel(IMvxNavigationService navigation) : base(navigation)
         {
-            data.DataAccess.GetAll();
         }
 
 
