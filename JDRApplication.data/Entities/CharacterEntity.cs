@@ -7,8 +7,10 @@ namespace JDRApplication.data.Entities
     public class CharacterEntity : CharacterData
     {
         public CharacterType EnumType { get; set; }
+        public Race EnumRace { get; set; }
+        public Extraction EnumExtraction { get; set; }
     }
-    
+
 
     public class CharacterData
     {
@@ -47,4 +49,77 @@ namespace JDRApplication.data.Entities
         ForceAura, // Champion
         DexteriteRelation // voleur
     }
+    public enum Race
+    {
+        Empire,
+        Bretonien,
+        Kislev,
+        Citéslibre,
+        NainKarakaKaraz,
+        NaindeClanIsolé,
+        HautElf,
+        ElfSylvain,
+        HommeLezart,
+        CompteVampire,
+        ElfNnoir
+    }
+
+    public enum Extraction
+    {
+        Noble, // tous les mage sont nombles
+        // humain sauf Bretonie
+        Citoyen,
+        Marchand,
+        Bourgeoisie,
+        // noble déjà présent
+
+        //Bretonie
+        Paysans,
+        //Noble déjà présent
+
+        //Nains
+
+        //Citoyen, dp
+        Guerrier,
+        Ingénieur,
+        MaitreDesRunes,
+        //Noble dp
+
+        // Elf noir
+
+        Esclave,
+        //Citoyen dp
+        MarchandDesclave,
+        AdorateurDeSlanesh,
+        Corsaire,
+        SoldatArméeRégulière,
+        //Noble dp
+
+        // Elf ( haut et silv )
+
+        //Citoyen, dp
+        //SoldatArméeRégulière, dp
+        SoldatArméeIrrégulière,
+        //Marchand, dp
+        Vagabond, /*( elf sylv ) */
+        //Noble dp
+
+        //Saurien
+        GuerrierSaurus,
+        GuerrierSaurusSacré,
+        Skink,
+        SkinkSacré,
+        PrêtreMage,
+
+        // Compte Vampire 
+        SousFifre,
+        Baron,
+        ViCompte,
+        Compte
+
+
+
+
+    }
+
 }
