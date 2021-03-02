@@ -10,3 +10,5 @@ JDRApplication.data/obj/
 JDRApplication.data/bin/
 
 JDRApplication.core/bin/
+
+JDRApplication/Resources/Resource.designer.cs
