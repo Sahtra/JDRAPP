@@ -189,8 +189,34 @@ namespace JDRApplication.core.viewmodels
         }
         private Task GenerateTask()
         {
-            CharacterEntity newCharacter = Logic.Generator.GenerateNew();
-
+            if(newCharacter == null)
+                newCharacter = Logic.Generator.GenerateNew();
+            else
+            {
+                var rerol = Logic.Generator.GenerateNew();
+                if (!KeepExtraction)
+                {
+                    LabelExtraction = "Extraction : " + rerol.Extraction;
+                }
+                if (!KeepRace)
+                {
+                    LabelRace = "Race : " + rerol.Race;
+                }
+                if (!KeepType)
+                {
+                    newCharacter.Type = rerol.Type;
+                    newCharacter.EnumType = rerol.EnumType;
+                    newCharacter.Physique = rerol.Physique;
+                    newCharacter.Force = rerol.Force;
+                    newCharacter.Dexterite = rerol.Dexterite;
+                    newCharacter.Mental = rerol.Mental;
+                    newCharacter.Savoir = rerol.Savoir;
+                    newCharacter.Instinct = rerol.Instinct;
+                    newCharacter.Social = rerol.Social;
+                    newCharacter.Relations = rerol.Relations;
+                    newCharacter.Aura = rerol.Aura;
+                }
+            }
             return Task.CompletedTask;
         }
 
